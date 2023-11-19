@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Крута назва</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<header style="padding: 20px;">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" style="color: gray;" href="#">Dashboard<img src="icons/Dashboard.png" alt=""></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: gray;" href="#">Settings<img src="icons/settings.png" alt=""></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: gray;" href="#">Calendar<img src="icons/calendar.png" alt=""></a>
+    </li>
+    <li class="nav-item nav-sp">
+      <a class="nav-link txt-clr" style="color: gray;" href="#">Message<img src="icons/message.png" alt=""></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Fabric
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Account</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#"><img src="icons/Base.png" alt=""></a>
+    </li>
+  </ul>
+</header>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="rectangle-frame">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="bar-icons">
+                <ul>
+                  <li><a href=""><img src="icons/Notification.png"></a></li>
+                  <li><a href=""><img src="icons/Users.png"></a></li>
+                  <li><a href=""><img src="icons/Photo.png"></a></li>
+                  <li><a href=""><img src="icons/Like.png"></a></li>
+                  <li><a href=""><img src="icons/Location.png"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="album overflow-x-auto">
+                <div class="item-alb"><img src="imgs/pht1.png" class="object-fit-cover border rounded"></div>
+                <div class="item-alb"><img src="imgs/pht1.png" class="object-fit-cover border rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-container rectangle-frame">
+              <div class="row">
+                <div class="col-md-8">
+                  <div style="padding: 20px;">
+                    <h2 style="padding: 10px; font-weight: bold; color: darkgrey;">
+                      SUN <span style="color: #ff7b0d; font-size: 30px; font-weight: bolder;">5°</span>
+                    </h2>
+                    <span style="padding-left: 25px;  color: darkgrey; font-size: 18px;">14/2</span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div style="display: flex; justify-content: center; padding: 20px;"></div><img src="icons/Sunicon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content-container rectangle-frame">
+          <div style="padding-top: 20px; display: flex; justify-content: center; padding-bottom: 40px;">
+            <div class="pie" style="--p:75;--c:orange;">75%</div>
+          </div>
+          <div style="display: flex; justify-content: center; padding-bottom: 40px;">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-light" 
+                      style="background-color: #ff7b0d; color: aliceblue; border-color: #ff7b0d;">1D</button>
+              <button type="button" class="btn btn-light"
+                      style="color: gray; border-color: #ff7b0d;">1W</button>
+              <button type="button" class="btn btn-light"
+                      style="color: gray; border-color: #ff7b0d;">1M</button>
+              <button type="button" class="btn btn-light"
+                      style="color: gray; border-color: #ff7b0d;">1Y</button>
+            </div>
+          </div>
+          <p class="stat">12 December 2014 <span class="stat-perc">+10%</span></p>
+          <p class="stat">24 December 2014 <span class="stat-perc">+25%</span></p>
+          <p class="stat">05 January 2015 <span class="stat-perc">+12%</span></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rectangle-frame content-container">
+          <div style="padding-top: 10px; padding-left: 10px;">
+            <span>Downloading <span>80%</span></span>
+          </div>
+          <div class="prog">
+            <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 15px;">
+              <div class="progress-bar" style="width: 80%; background: linear-gradient(to right, #ffa84c 0%,#ff7b0d 100%);"></div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="row">
+          <div class="col-md-12">
+            <div class="rectangle-frame">
+              <div class="test">
+                <img class="icons-22" src="icons/Facebook.png">
+                <img class="icons-22" src="icons/Twitter.png">
+                <img class="icons-22" src="icons/G.png">
+                <img class="icons-22" src="icons/Mail.png">
+              </div>
+              <div class="values-socm">
+                <span>227K</span>
+                <span>153K</span>
+                <span>76K</span>
+                <span>21K</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="rectangle-frame content-container">
+              <div class="inp-for">
+                <h5>Sign in to your account</h3>
+              </div>
+              <form class="inp-data">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Password</label>
+                </div>
+                <div class="inp-for gap-2 col-6 mx-auto" style="padding-bottom: 20px;">
+                  <button class="btn btn active" type="button">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="content-container rectangle-frame">
+          <div class="inp-for"><h5>Contact us</h3></div>
+          <form class="inp-data">
+            <div style="padding-bottom: 20px;"><input class="form-control" type="text" placeholder="Name"></div>
+            <div style="padding-bottom: 20px;"><input class="form-control" type="text" placeholder="Subject"></div>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+            <div class="inp-for gap-2 col-6 mx-auto" style="padding-bottom: 20px;">
+              <button class="btn btn active" type="button" style="border-color: #ff7b0d;"><span style="color: #ff7b0d;">SEND</span></button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-container rectangle-frame">
+              <div class="srch-usrs">
+                <form class="d-flex" role="search">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="usr">
+                  <img src="imgs/usr_avatar.png">
+                  <span>Harry Roberts</span>
+                  <img src="icons/Add.png" style="position: absolute; right: 0; padding-right: 30px; padding-top: 6px;">
+                </div>
+                <div class="usr">
+                  <img src="imgs/usr_avatar.png">
+                  <span>Harry Roberts</span>
+                  <img src="icons/Add.png" style="position: absolute; right: 0; padding-right: 30px; padding-top: 6px;">
+                </div>
+                <div class="usr">
+                  <img src="imgs/usr_avatar.png">
+                  <span>Harry Roberts</span>
+                  <img src="icons/Add.png" style="position: absolute; right: 0; padding-right: 30px; padding-top: 6px;">
+                </div>
+                <div class="usr">
+                  <img src="imgs/usr_avatar.png">
+                  <span>Harry Roberts</span>
+                  <img src="icons/Add.png" style="position: absolute; right: 0; padding-right: 30px; padding-top: 6px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="rectangle-frame">
+              <div class="player"><img src="imgs/playr.png"></div>
+              <div class="music-title">
+                <h4 style="font-weight: bolder; color: #ff7b0d;">In Dark, In Day</h4>
+                <span>Maya Jane Coles</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-8">
+        <div class="content-container rectangle-frame">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="img-post"><img src="imgs/post.png"></div>
+            </div>
+            <div class="col-xl-8">
+              <div>
+                <h4 style="padding: 10px;">Bacon Ipsum!</h4>
+                <p style="padding: 10px;">Bacon ipsum dolor amet shankle tri-tip salami doner chicken rump.
+                  Cow meatloaf boudin, jowl beef corned beef 
+                  turducken sirloin biltong 
+                  Meatloaf bacon t-bone ground round doner 
+                  leberkas drumstick tongue pork belly jowl chuck ball tip turkey hamburger strip steak. 
+                </p>
+              </div>
+            </div>
+          </div>     
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="content-container rectangle-frame">
+              <div class="calendar">
+                <h5>DECEMBER</h5>
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="rectangle-frame">
+                  <div class="containerr">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="map"><img src="imgs/cloocl.png" style="width: 100%;"></div>
+                      </div>
+                      <div class="col-sm-8" style="padding: 20px;">
+                        <h5 style="color: #ff7b0d; font-size: 30px; font-weight: bolder;">11:45</h5>
+                        <span>December, 14, 2014</span>
+                      </div>
+                    </div>
+                  </div>             
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="content-container rectangle-frame">
+                  <div><img src="imgs/Shop.png" style="width: 100%;"></div>
+                  <div style="padding: 40px;">
+                    <h2 style="font-weight: bold;">Nike</h5>
+                    <span style="font-size: x-large;">Mercurial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="content-container rectangle-frame">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div style="display: flex; justify-content: center; padding-top: 20px;"><img src="/imgs/Shoe (1).png" alt=""></div>
+                        <div class="inp-for gap-2 col" style="padding: 30px;">
+                          <button class="btn btn active" type="button" style="border-color: orange;">
+                            <span style="color:orange;">Checkout</span></button>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="rectangle-frame content-container">
+              <div class="map"><img src="imgs/Map.png"></div>
+              <div class="music-title" style="display: inline-block;">
+                <h4 style="font-weight: bolder;">Fabric Studio</h4>
+                <span>Knowhwere Avenue <br></span>
+                <span>Marvel Street 024 <br></sapn>
+                <span>Sun Galaxy</span>
+              </div>
+              <!-- <div style="display: inline-block; padding-left: 200px;"><img src="icons/Location (1).png"></div> -->
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="rectangle-frame content-container">
+                  <h5>Ennio 5</h5>
+                  
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="rectangle-frame content-container">
+                  <div class="image-downl"><img src="imgs/downl.png" style="width: 100%;"></div>
+                  <div class="inp-for gap-2 col mx-auto" style="padding: 30px;">
+                    <button class="btn btn active" type="button" style="border-color: darkgrey;">
+                      <span style="color:darkgrey;">Download the kit now</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,475 @@
+* {
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.main-frame {
+  margin-left: 100px; 
+  margin-right: 100px;
+}
+
+.nav-sp {
+  margin-right: 30px;
+}
+
+.nv-v {
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.flex_container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle-frame {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 1px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #fcab11 0%,#f9465b 100%);;
+    border-radius: 10px 10px 0 0; /* Закруглені кути тільки зверху */
+  }
+}
+
+.rectangle-frame_ {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 1px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #fcab11 0%,#f9465b 100%);;
+    border-radius: 10px 10px 0 0; /* Закруглені кути тільки зверху */
+  }
+}
+
+.rectangle-frame2 {
+  margin-bottom: 20px;
+  padding: 1px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+
+.rectangle-frame3 {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 1px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #fcab11 0%,#f9465b 100%);
+    border-radius: 0 0 10px 10px; /* Закруглені кути тільки знизу */
+  }
+}
+
+.stat {
+  text-align: center;
+  font-size: 12px;
+}
+
+.stat-perc {
+  margin-left: 10px;
+}
+
+.prog {
+  padding: 10px;
+}
+
+.icons-22 {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.values-socm {
+  display: flex;
+  justify-content: center;
+}
+
+.values-socm span {
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #fcab11 0%,#f9465b 100%);;
+}
+
+.inp-for {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.inp-data {
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.img-post img{
+  height: 150px;
+  
+}
+
+.srch-usrs {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.usr {
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.usr span {
+  padding-left: 10px;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.player img {
+  width: 100%;
+}
+
+.music-title {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.calendar-head {
+  padding: 25px 20px 0 20px;
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.divider-calendar hr {
+  width: 280px;
+}
+
+.calendar-weekdays {
+  div {
+    font-size: 13px;
+    font-weight: bolder;
+    color: #f98246;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+
+.calendar-days {
+  padding-bottom: 25px;
+  
+  td {
+    font-size: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+.hidden-day {
+  color: rgb(189, 189, 189);
+}
+
+.current-day {
+  color: #f98246;
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  width: 1px;
+  border-radius: 7px;
+  border: 2px solid gainsboro;
+  border-color: #f98246;
+}
+
+.map {
+  overflow: hidden;
+  border-radius: 5px;
+  img {
+    width: 100%;
+  }
+}
+
+.date-time {
+  padding-top: 8px;
+  padding-right: 25px;
+}
+
+.time-info {
+  color: #ff7b0d; 
+  font-size: 50px; 
+  font-weight: 700;
+}
+
+.date-info {
+  font-size: 13px;
+}
+
+.bar-icons {
+  width: 100%;
+  height: 380px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #fcab11 0%,#f9465b 100%);
+}
+
+.bar-icons li {
+  list-style: none;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+}
+
+.divider-album {
+  width: 100%;
+  height: 65px;
+  padding-top: 15px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.album-nav {
+  padding: 12px 0px 0px 0px;
+  box-shadow: 0 -5px 10px -10px #000;
+  h5 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.item-alb {
+  padding-top: 10px;
+  overflow: hidden;
+
+  img {
+    height: 95px;
+  }
+}
+
+.weather-grad {
+  padding-top: 20px;
+  color: #ff7b0d; 
+  font-size: 60px; 
+  font-weight: bolder;
+}
+
+.weather-info {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.sun {
+  font-size: 30px;
+  font-weight: 800;
+  color: gray;
+}
+
+.dat-inf {
+  font-size: 15px;
+  color: gray;
+}
+
+.weath-icon {
+  padding-left: 4px;
+  padding-top: 35px;
+}
+
+.btn-edt {
+  background: linear-gradient(to right, #fcab11 0%,#f9465b 100%); 
+  color: aliceblue;
+  font-weight: 600;
+  border-color: #ff7b0d;
+  width: 60px;
+}
+
+.btn-edt2 {
+  color: gray; 
+  border-color: gray;
+  width: 60px;
+}
+
+.chart-container {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.chart-container1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.chart-butt {
+  padding-bottom: 40px;
+}
+
+.image-downl {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rectangle-frame:hover,
+.rectangle-frame2:hover,
+.rectangle-frame3:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 15px -15px #000;
+}
+
+.blog-title {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.icn1, .icn2 {
+  padding-top: 23px;
+  padding-right: 30px;
+}
+
+.blog-descr {
+  font-size: 15px;
+}
+
+.read-more {
+  padding-top: 20px;
+
+  a {
+    text-decoration: none;
+    color: #f98246;
+    font-weight: 700;
+  }
+}
+
+.loc-icon {
+  padding-top: 35px;
+  padding-right: 30px;
+}
+
+.img-post {
+  padding-top: 30px;
+  padding-bottom: 23px;
+  padding-right: 25px;
+  padding-left: 35px;
+}
+
+.img-post img {
+  width: 180px;
+  height: 140px;
+}
+
+.blog-foot1 {
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.usr-adm {
+  padding-bottom: 5px;
+}
+
+.usr-adm img {
+  height: 12px;
+}
+
+.post-time {
+  font-size: 14px;
+}
+
+.price-stars {
+  padding-top: 27px;
+  padding-right: 30px;
+}
+
+.shop-price {
+  font-size: 30px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.old-price {
+  padding-top: 13px;
+  font-size: 18px;
+  color: rgb(181, 179, 179);
+}
+
+.paym-price {
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.pay-img {
+  padding-top: 15px;
+}
+
+.loc-icon img {
+  width: 75px;
+}
+
+.stand, .expr {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.mod-txt {
+  color: #f98246;
+}
